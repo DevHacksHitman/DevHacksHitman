@@ -27,11 +27,12 @@ permissions, agent-to-agent messaging, relayer payouts, wallet-scoped UX.
 It taught me that "the contract is safe" and "the people holding the keys
 are safe" are different problems.
 
-## Now building
+**[solana-liquidity-stream-tracker](https://github.com/DevHacksHitman/solana-liquidity-stream-tracker)** — a transparent, zero-alpha market-data
+monitor: async WebSocket listener, SQLite store with signature dedupe, and
+a React ticker. It observes the market; it does not act on it. 18 zero-network
+tests, sensitivity-gated history.
 
-**solana-liquidity-stream-tracker** — async Solana market monitor:
-WebSocket liquidity listener, block parser, non-blocking analytics writer.
-Private today; goes public after a security pass.
+## Now building
 
 **edge url shortener** — Rust, axum + Tokio. The redirect never waits on
 the analytics counter: non-blocking writer, Base62 keys, SQLx. The design
